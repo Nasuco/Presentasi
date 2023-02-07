@@ -8,18 +8,14 @@
     justify-content: end;
 }
 
-.hero .app-name {
-    font-size: 80px;
-}
-
 .hero .team {
     font-size: 21px;
 }
 
-.container .card
+.container .kartu
 {
     justify-content: center;
-    max-width: 300px;
+    max-width: 400px;
     height: 215px;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -27,51 +23,61 @@
     transition: 0.3s ease-in-out;
 }
 
+.container .myair {
+  font-size: 100px;
+}
+
+@media (max-width: 766px) {
+  .container .myair {
+    font-size: 40px;
+  }
+}
+
 .judul {
     font-weight: bold;
 }
 
 .wahyu-h1 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .fudin-h1 {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .farros-h1 {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .annas-h1 {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .azka-h1 {
-    font-size: 50px;
+    font-size: 43px;
 }
 
 .fikri-h1 {
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .fani-h1 {
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .lana-h1 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .ilham-h1 {
-    font-size: 30px;
+    font-size: 22px;
 }
 
-.container .card:hover
+.container .kartu:hover
 {
     height: 300px;
 }
-.container .card .imgContainer
+.container .kartu .imgContainer
 {
     display: flex;
     justify-content: center;
@@ -84,12 +90,12 @@
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-.container .card .imgContainer img
+.container .kartu .imgContainer img
 {
     max-width: 100%;
     border-radius: 4px;
 }
-.container .card .content
+.container .kartu .content
 {
     position: relative;
     margin-top: -140px;
@@ -101,7 +107,7 @@
     pointer-events: none;
     transition: 0.3s ease-in-out;
 }
-.container .card:hover .content
+.container .kartu:hover .content
 {
     visibility: visible;
     opacity: 1;
@@ -110,7 +116,88 @@
 }
 
 @media (max-width: 330px){
-    .container .card .imgContainer{
+    .container .kartu .imgContainer{
         left: -2px;
     }
 }
+
+.timeline-1 {
+    border-left: 3px solid #b565a7;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: purple;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 18%;
+  }
+
+  @media (max-width: 767px) {
+    .timeline-1 {
+      max-width: 98%;
+      padding: 25px;
+    }
+  }
+  
+  .timeline-1 .event {
+    border-bottom: 1px dashed #000;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event {
+      padding-top: 30px;
+    }
+  }
+  
+  .timeline-1 .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+  
+  .timeline-1 .event:before,
+  .timeline-1 .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline-1 .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event:before {
+      left: 0px;
+      text-align: left;
+    }
+  }
+  
+  .timeline-1 .event:after {
+    -webkit-box-shadow: 0 0 0 3px #b565a7;
+    box-shadow: 0 0 0 3px #b565a7;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .timeline-1 .event:after {
+      left: -31.8px;
+    }
+  }
+  
